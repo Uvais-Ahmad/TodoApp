@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/css/home.css">
+	<script src="https://kit.fontawesome.com/7c62b68722.js" crossorigin="anonymous"></script>
+	<title>home</title>
+</head>
+<body>
+	<form>
+        
+        <div id="user">
+            <h3 id="headTag">TODO APP</h3>
+            <hr>
+            <h4 class="fontColor">DESCRIPTION</h4>
+            <input type="text" name="description" class="input" placeholder="What do you need to do ?" ><hr>
+            <div id='sec'>
+            	<div id="secDiv">
+            		<h4 class="fontColor">CATEGORY</h4>
+            		<select>
+            			<option disabled selected value>Select the category ? </option>
+            			<option>Personal</option>
+            			<option>Work</option>
+            			<option>School</option>
+            			<option>Cleaning</option>
+            			<option>Other</option>
+            		</select>
+            	</div>
+
+            	<div>
+            		<h4 class="fontColor">DUE DATE</h4>
+            		<input class="input"  type="date" name="date">	
+            	</div>
+            </div><hr>
+
+            <div id=btn>
+            	<button type="submit" name="AddTask" id="addbtn"><i class="fa-solid fa-plus"></i>ADD TASK</button>
+            	<button type="submit" name="DeleteTask" id="delbtn" ><i class="fa-solid fa-trash-can"></i>DELETE TASK</button>
+            </div>
+        </div>
+
+        <!-- ========================= DATA SECTION  ============ -->
+        <div id="data">
+        	<input type="checkbox" name="" id="chkbox">Hii This is Uvais
+
+        </div>
+    </form>
+
+</body>
+</html>
