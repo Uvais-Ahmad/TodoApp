@@ -8,7 +8,7 @@
 	<title>home</title>
 </head>
 <body>
-	<form>
+	<form action="/addTask" method="POST">
         
         <div id="user">
             <h3 id="headTag">TODO APP</h3>
@@ -18,13 +18,13 @@
             <div id='sec'>
             	<div id="secDiv">
             		<h4 class="fontColor">CATEGORY</h4>
-            		<select>
+            		<select name="category">
             			<option disabled selected value>Select the category ? </option>
-            			<option>Personal</option>
-            			<option>Work</option>
-            			<option>School</option>
-            			<option>Cleaning</option>
-            			<option>Other</option>
+            			<option value="Personal">Personal</option>
+            			<option value="Work">Work</option>
+            			<option value="School">School</option>
+            			<option value="Cleaning">Cleaning</option>
+            			<option value="Other">Other</option>
             		</select>
             	</div>
 
@@ -35,8 +35,8 @@
             </div><hr>
 
             <div id=btn>
-            	<button type="submit" name="AddTask" id="addbtn"><i class="fa-solid fa-plus"></i>ADD TASK</button>
-            	<button type="submit" name="DeleteTask" id="delbtn" ><i class="fa-solid fa-trash-can"></i>DELETE TASK</button>
+            	<button type="submit"  id="addbtn"><i class="fa-solid fa-plus"></i>ADD TASK</button>
+            	<button type="submit"  id="delbtn" ><i class="fa-solid fa-trash-can"></i>DELETE TASK</button>
             </div>
         </div>
 
