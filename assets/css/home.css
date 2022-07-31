@@ -5,7 +5,7 @@
     margin: 10px;
 }
 form{
-    height: 80vh;
+    min-height: 80vh;
     width: 60vw;		    
     margin: auto;
     border: 1px solid grey;
@@ -79,7 +79,55 @@ select{
 }
 
 /* =================DATA SEC========== */
-#chkbox{
-	width: auto;
-	line-height: 2rem;
+
+.data{
+	display: flex;
+
 }
+span{
+	height: 17px;
+	width: 17px;
+	border: 2px solid grey;
+	border-radius: 5px;
+	margin: 10px;
+}
+.data > h3{
+	margin: 10px;
+	margin-bottom: 2px;
+}
+
+
+.date{
+	display: flex;
+	margin-left: 45px;
+}
+
+.fontLightColor , ::placeholder{
+	color:#b5b2b1 ;
+}
+
+.outputSection{
+	display: flex;
+	justify-content: space-between;
+	margin: 20px;
+	border-top: 1px solid grey;
+	
+
+}
+
+.categBtn > p{
+	box-sizing: border-box;
+	height: 50px;
+	min-width: 130px;
+	padding: 15px 20px;
+	text-align: center;
+	background-color: purple;
+
+}
+
+.outputSection i{
+	font-size: 1.3rem;
+	color: grey;
+	border-radius: 5px;
+}
+

@@ -40,11 +40,32 @@
             </div>
         </div>
 
-        <!-- ========================= DATA SECTION  ============ -->
-        <div id="data">
-        	<input type="checkbox" name="" id="chkbox">Hii This is Uvais
+		<ul>
 
-        </div>
+			<% for(let task of tasksArrObj) { %>
+				<!-- <hr> -->
+				<li class="outputSection">
+					<div>
+						<div class="data">
+							<span></span>
+							<!-- <i class="fa-regular fa-square-check"></i> -->
+							<h3 class="fontColor"><%= task.description %> </h3>
+						</div>
+		
+						<div class="date">
+							<i class="fa-solid fa-calendar-days fontColor"></i>
+							<h4 class="fontLightColor"><%= task.date %> </h4>
+						</div>
+					</div>
+		
+					<div class=categBtn>
+						<p><%= task.category %> </p>
+					</div>
+				</li>    
+			<% } %> 
+
+		</ul>
+
     </form>
 
 </body>
