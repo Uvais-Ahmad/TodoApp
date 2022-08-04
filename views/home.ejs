@@ -14,7 +14,7 @@
             <h3 id="headTag">TODO APP</h3>
             <hr>
             <h4 class="fontColor">DESCRIPTION</h4>
-            <input type="text" name="description" class="input" placeholder="What do you need to do ?" ><hr>
+            <input type="text" name="description" class="input" placeholder="What do you need to do ?" required><hr>
             <div id='sec'>
             	<div id="secDiv">
             		<h4 class="fontColor">CATEGORY</h4>
@@ -30,13 +30,13 @@
 
             	<div>
             		<h4 class="fontColor">DUE DATE</h4>
-            		<input class="input"  type="date" name="date">	
+            		<input class="input"  type="date" name="date" required>	 
             	</div>
             </div><hr>
 
             <div id=btn>
             	<button type="submit"  id="addbtn"><i class="fa-solid fa-plus"></i>ADD TASK</button>
-            	<button type="submit"  id="delbtn" ><i class="fa-solid fa-trash-can"></i>DELETE TASK</button>
+            	<a  class="button" href="" id="delbtn" ><i class="fa-solid fa-trash-can"></i>DELETE TASK</a>
             </div>
         </div>
 
@@ -47,9 +47,9 @@
 				<li class="outputSection">
 					<div>
 						<div class="data">
-							<span></span>
+							<span><a class="chk" href="#" name ='a' value= <%= task._id %> >X</a></span>
 							<!-- <i class="fa-regular fa-square-check"></i> -->
-							<h3 class="fontColor"><%= task.description %> </h3>
+							<h3 class="fontColor descrip"><%= task.description %> </h3>
 						</div>
 		
 						<div class="date">
@@ -68,5 +68,6 @@
 
     </form>
 
+	<script type="text/javaScript" src="/js/home.js"></script>
 </body>
 </html>

@@ -6,4 +6,6 @@ router.get('/',home.homeAction);
 
 router.post('/addTask',home.addTask);
 
+router.get('/deleteTask',home.delTask);
+
 module.exports=router;
